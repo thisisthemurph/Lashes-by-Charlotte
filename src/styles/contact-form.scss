@@ -1,0 +1,55 @@
+@import "_global.scss";
+
+.form {
+  &__input {
+    display: flex;
+    flex-direction: column-reverse;
+
+    border: solid 1px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    margin-bottom: 1em;
+
+    label {
+      cursor: text;
+      display: block;
+      width: 100%;
+      padding: 0.5em;
+      transform: translateY(50%);
+      color: gray;
+
+      transition: color 200ms ease, transform 200ms ease;
+    }
+
+    input,
+    textarea {
+      background: none;
+      border: none;
+      outline: none;
+      font-family: $-f-default;
+      font-size: 1em;
+      width: 100%;
+      padding: 0.5em;
+    }
+
+    input:not(:placeholder-shown) + label {
+      transform: translateY(0);
+    }
+
+    input[type="submit"] {
+      border: none;
+      width: initial;
+    }
+
+    &:focus-within {
+      label {
+        color: $-c-accent;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

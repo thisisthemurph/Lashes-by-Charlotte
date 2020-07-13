@@ -1,0 +1,57 @@
+@import "_global.scss";
+
+.footer {
+  $-c-footer-bg: $diesel;
+
+  color: white;
+  background: $-c-footer-bg;
+
+  a {
+    display: inline-block;
+    color: white;
+  }
+
+  &-section {
+    &__body {
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    margin: 4px 0;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 4px;
+    max-width: 400px;
+
+    transition: background 250ms ease-in, color 200ms ease;
+
+    svg {
+      width: 1em;
+      height: 1em;
+      fill: white;
+      margin-right: 1em;
+    }
+
+    &__fb svg {
+      fill: $fb-blue;
+    }
+
+    &__insta svg {
+      fill: $insta-red;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: black;
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+$pippin: #ffe3e8;
+$dairy-cream: #fad5c2;
+$scorpion: #646060;
+$diesel: #180004;
+$fb-blue: #1877f2;
+$insta-red: #e4405f;
+$sundown: #ffaebc;
+$pink: pink;
+
+$-c-primary: $pippin;
+$-c-accent: $dairy-cream;
+$-c-btn-shadow: $sundown;
+$-c-btn-text: white;
+$-c-btn-bg: $pink;
+$-c-link-text: $sundown;
+$-c-link-text-active: white;
+$-c-burger: $scorpion;
+$-c-shadow: rosybrown;
+
+$-f-heading: "Overpass", sans-serif;
+$-f-default: "Raleway", sans-serif;
+
+$max-width: 1100px;
+$hero-width: 800px;
+
+@mixin shadow {
+  box-shadow: 16px 16px 32px $-c-shadow;
+}

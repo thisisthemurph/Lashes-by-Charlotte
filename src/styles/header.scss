@@ -1,0 +1,68 @@
+@import "./_global.scss";
+
+.header {
+  position: relative;
+  background: $-c-primary;
+  font-family: $-f-heading;
+
+  .hero {
+    z-index: 2;
+    margin: 0 auto;
+    max-width: $hero-width;
+    padding: 4em 2em;
+    padding-bottom: 6em;
+
+    background: $-c-accent;
+    text-align: center;
+    text-transform: uppercase;
+
+    &__heading {
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      margin-bottom: 0;
+      margin-right: -1rem; // Fix issue with final letter letter spacing
+    }
+
+    &__subheading {
+      line-height: initial;
+      font-size: 1.94rem;
+      letter-spacing: 0.46rem;
+      margin-top: -0.5rem;
+      margin-right: -1rem; // Fix issue with final letter letter spacing
+    }
+  }
+
+  &__cta {
+    --button-width: 200px;
+
+    color: black;
+    width: var(--button-width);
+    position: absolute;
+    bottom: 2.5em;
+    left: calc(50% - var(--button-width) / 2);
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .header {
+    .hero {
+      &__subheading {
+        font-size: 2rem;
+        margin-right: -0.46rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    padding-bottom: 4em;
+    .hero {
+      @include shadow;
+
+      margin: 4em auto;
+      padding-bottom: 4em;
+    }
+  }
+}
