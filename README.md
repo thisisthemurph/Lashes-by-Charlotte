@@ -36,5 +36,6 @@ The of the webiste was to be based on a a simple colour scheme the client was al
 To get the project running in your local environment:
 
 1. Clone the repository
+1. Change directory `cd Lashes-by-Charlotte`
 1. Run `npm install` and `gatsby develop`
 1. The project should now be available at [localhost port 8000](http://localhost:8000)
